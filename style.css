@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:700');
+
+span{
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 75px;
+	animation: fade-in 6s;
+	position:relative;
+	top: -20px;
+	left: -95px;
+}
+
+
+
+button{
+	outline: none;
+	font-family: 'Montserrat Alternates', sans-serif;
+	border: 2.5px solid white;
+	font-size: 25px;
+	padding: 15px;
+	background-color: #611f69;
+	color: white;
+	border-radius: 30px;
+	transition: 1s ease-in-out;
+	position: relative;
+	bottom: 140px;
+	display: none;
+	left: 135px;
+}
+
+button:hover{
+	background-color: white;
+	color: #611f69;
+}
+
+@keyframes spin{
+	0%{
+		transform: rotateZ(0deg);
+	}
+	100%{
+		transform: rotateZ(360deg);
+	}
+}
+
+#new{
+	width: 150px;
+	height: 150px;
+	display:block;
+	background-image: url("https://i.ibb.co/HBX3V80/phase5.png");
+	position: relative;
+	top: -135px;
+	left: 5px;
+	opacity: 0;
+	background-size: 150px 150px;
+}
+
+#logo{
+	display: inline-block;
+	position: relative;
+	transform: rotateZ(-20deg);
+	left: -10px;
+}
+
+@keyframes gooey{
+	0%{
+		transform: none;
+	}
+	25%{
+		transform: scaleX(1.25);
+	}
+	50%{
+		transform: scaleY(1.25);
+	}
+	75%{
+		transform: scaleX(1.25);
+	}
+	99%{
+		transform: none;
+	}
+}
+
+@keyframes fade-in{
+	0%{
+		opacity: 0;
+		transform: rotateZ(0deg);
+	}
+	100%{
+		opacity: 1;
+		transform: rotateZ(0deg);
+	}
+}
+
+@keyframes fade-in-rotate{
+	0%{
+		opacity: 0;
+		transform: rotateZ(0deg);
+		left: -100px;
+	}
+
+	100%{
+		left: -10px;
+		opacity: 1;
+		transform: rotateZ(-18deg);
+	}
+}
+
+.pill{
+	display: inline-block;
+	position:relative;
+	border-radius: 50px;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.pill.horiz{
+	width:15px;
+	height: 100px;
+}
+
+.pill.vert{
+	width:100px;
+	height: 15px;
+}
+
+#b1{
+	left: 50px;
+	background-color: rgba(47, 182, 124, 0.85);
+	animation: slide-top 1.5s;
+}
+
+.rotate{
+	transform: rotateX(200px);
+}
+
+#b2{
+	left: 75px;
+	background-color: rgba(237, 176, 45, 0.85);
+	animation: slide-top 1.5s;
+}
+
+#b3{
+	left: -7.5px;
+	top: -62.5px;
+	background-color: rgba(28, 140, 214, 0.85);
+	animation: slide-left-b 1.5s;
+}
+
+#b4{
+	top: -22.5px;
+	left: -111.5px;
+	background-color: rgba(224, 30, 91, 0.85);
+	animation: slide-left-a 1.5s;
+}
+
+@keyframes slide-top{
+	from{
+		position: relative;
+		top: -200px;
+		box-shadow: none;
+	}
+
+	to{
+		position: relative;
+		top: 0px;
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+}
+
+@keyframes slide-left-a{
+	from{
+		position: relative;
+		left: -500px;
+		box-shadow: none;
+	}
+
+	to{
+		position: relative;
+		left: -111.5px;
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+}
+
+@keyframes slide-left-b{
+	from{
+		position: relative;
+		left: -396px;
+		box-shadow: none;
+	}
+
+	to{
+		position: relative;
+		left: -7.5px;
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+}
+
+.fade-in-rotate{
+	animation: fade-in-rotate 1s;
+}
